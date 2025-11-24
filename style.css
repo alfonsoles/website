@@ -1,0 +1,114 @@
+/* General page setup */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  /* Gradient background */
+  background: linear-gradient(to right, #0d47a1, #42a5f5);
+  color: white;
+}
+
+/* Header styling */
+header {
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Main section (About Me) */
+main {
+  flex: 1;
+  padding: 50px 20px;
+}
+
+main img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%; /* circular profile picture */
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+main p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Skills + Hobbies side by side */
+#skills-hobbies {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 30px 20px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  color: #fff;
+}
+
+.skills, .hobbies {
+  flex: 1;
+  text-align: left;
+}
+
+.skills ul, .hobbies ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li, .hobbies li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Gallery section */
+#gallery {
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  padding: 30px 20px;
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.image-grid img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Footer styling (normal, not fixed) */
+footer {
+  background: #0d47a1;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px; /* adds space above footer */
+}
